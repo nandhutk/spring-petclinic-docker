@@ -9,6 +9,7 @@ metadata:
     io.kompose.service: petclinic
   name: petclinic
 spec:
+  type: NodePort
   ports:
     - name: "8000"
       port: 8000
