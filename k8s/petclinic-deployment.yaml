@@ -31,7 +31,7 @@ spec:
               value: jdbc:mysql://mysqlserver/petclinic
             - name: SERVER_PORT
               value: "8080"
-          image: jsgiraldoh/spring-petclinic-docker
+          image: nandhutk/spring-pet
           imagePullPolicy: IfNotPresent
           name: petclinic
           ports:
