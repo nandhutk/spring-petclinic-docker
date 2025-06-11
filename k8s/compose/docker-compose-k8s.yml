@@ -1,7 +1,7 @@
 
 services:
   petclinic:
-    image: jsgiraldoh/spring-petclinic-docker
+    image: nandhutk/spring-pet
     ports:
       - 8000:8000
       - 8080:8080
