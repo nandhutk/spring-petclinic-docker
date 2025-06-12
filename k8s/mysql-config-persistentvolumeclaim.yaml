@@ -1,3 +1,17 @@
+# mysql-pvd.yaml
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: mysql-pvd
+spec:
+  capacity:
+    storage: 100Mi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: /mnt/data/mysql
+---
+========
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
@@ -11,4 +25,5 @@ spec:
   resources:
     requests:
       storage: 100Mi
+  volumeName: mysql-pvd
 status: {}
