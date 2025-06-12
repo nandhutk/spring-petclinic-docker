@@ -46,8 +46,10 @@ spec:
           volumeMounts:
             - mountPath: /var/lib/mysql
               name: mysql-data
+              readOnly: true
             - mountPath: /etc/mysql/conf.d
               name: mysql-config
+              readOnly: true
       restartPolicy: Always
       volumes:
         - name: mysql-data
